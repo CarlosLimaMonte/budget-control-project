@@ -1,6 +1,6 @@
 # Budget Control
 
-Sistema de gestão de financeiro desenvolvido para gerenciamento de receitas e despesas, com autenticação de usuário e dashboard para acompanhamento das movimentações financeiras.
+Sistema de gestão financeira desenvolvido para gerenciamento de receitas e despesas, com autenticação de usuário e dashboard para acompanhamento das movimentações financeiras.
 
 Projeto foi desenvolvido com **Java + Spring Boot** no backend e **React** no frontend, utilizando **JWT** para autenticação e **MySql** para persistência de dados.
 
