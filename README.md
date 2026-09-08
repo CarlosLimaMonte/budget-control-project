@@ -32,6 +32,17 @@ O objetivo do projeto foi entender como o **backend** e **frontend** interagem e
 
 Durante o desenvolvimento do projeto nenhuma linha de código foi feita diretamente por IA, todo o desenvolvimento foi feita por mim utilizando a IA somente como auxílio para entender os conceitos aplicados no projeto.
 
+# Próximos passos
+
+- Melhorar a interface do dashboard
+- Adicionar gráficos financeiros
+- Melhorar filtros e consultas por período
+- Adicionar validações mais completas
+- Criar testes automatizados
+- Documentar a API
+- Publicar aplicação em produção
+- Melhorar responsividade do frontend
+
 # Como executar o projeto
 ### Pré-requisitos
 
@@ -78,5 +89,9 @@ Execute o projeto:
 npm run dev
 
 # Autor
+## Carlos Eduardo
 
 Projeto desenvolvido como parte do meu aprendizado e evolução no desenvolvimento de aplicações Java/Spring Boot e React.
+
+**Aplicação:** Em breve  
+**API:** Em breve
