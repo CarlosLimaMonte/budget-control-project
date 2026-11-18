@@ -1,6 +1,7 @@
 package com.portfolio.BudgetControl.controller;
 
 
+import com.portfolio.BudgetControl.converter.Converter;
 import com.portfolio.BudgetControl.entity.Dto.ExpenseCreationDto;
 import com.portfolio.BudgetControl.entity.Dto.ExpenseDto;
 import com.portfolio.BudgetControl.entity.Dto.UserDto;
@@ -75,5 +76,21 @@ public class ExpenseController {
 
     return "POST autenticado: " + user.getEmail();
   }
+
+  @PostMapping("/preview-message")
+  public ExpenseCreationDto previewMessage(@RequestBody String message) {
+    return Converter.receiveStringConverterToExpenseCreationDto(message);
+  }
+
+  @PostMapping("/from-message")
+  public ExpenseDto createFromMessage(
+          @RequestBody String message,
+          @AuthenticationPrincipal User user) {
+    // 1. Converter a mensagem em ExpenseCreationDto.
+
+    return ExpenseDto.fromEntity(expenseService.createExpense
+            (Converter.receiveStringConverterToExpenseCreationDto(message).toEntity(), user));
+  }
+
 
 }
